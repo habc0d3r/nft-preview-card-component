@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  /* border: 2px solid #888; */
+  width: 340px;
+  padding: 20px;
+  border-radius: 13px;
+  background-color: hsl(216, 50%, 16%);
+
+  /* background-color: rgba(50, 80, 200, 0.2);
+     background-color: rgba(0, 0, 0, 0.1);
+
+     background-color: #ddd; */
+
+  /* background-color: hsl(90, 50%, 0%); */
+}
+
+.card-header {
+  /* border: 2px solid lightsalmon; */
+  height: 300px;
+  border-radius: 8px;
+  background-color: hsl(215, 32%, 27%);
+  background-image: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+  cursor: pointer;
+  transition: ease 300ms;
+}
+
+.card-header:active {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+}
+
+.card-title {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: linear 200ms;
+}
+
+.card-title:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details-s1,
+.card-details-s2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-details-s1 > h3 {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-tagline {
+  margin: 5px 0;
+  font-size: large;
+  line-height: 1.5;
+}
+
+.card-tagline,
+.card-footer-info,
+.card-details-s2 > h3 {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-name {
+  color: hsl(0, 0%, 100%);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.avatar {
+  border: 1px solid rgb(228, 215, 215);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(215, 32%, 27%);
+  background: url("./images/image-avatar.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.line {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.icon-ethereum {
+  background: url("./images/icon-ethereum.svg");
+}
+
+.icon-clock {
+  background: url("./images/icon-clock.svg");
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
